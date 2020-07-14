@@ -16,18 +16,8 @@ body {
   box-shadow: 0px 0px 5px 0px rgba(1,1,1, 0.75);
   transition: 0.5s;
 }
-.card:not(:first-child) {
-  margin-left: -1rem;
-}
-.card:not(:first-child):hover,.card:not(:first-child):focus {
-  background:#e91e63;
-  color: white;
-  border: solid white 2px;
-  outline: none;
-  transform: translateY(-1rem) scale(1.2);
-  }
 .card:first-child:hover,
-.card:first-child:focus-within {
+.card:first-child:focus {
   background:#e91e63;
   color: white;
   border: solid white 2px;
@@ -35,7 +25,14 @@ body {
   transform: translateY(-1rem) scale(1.2);
 }
 .card:first-child:hover ~.card,
-.card:first-child:focus-within ~.card {
+.card:first-child:focus ~.card {
   transform:rotate(-90deg) scale(1.2);
   margin-left: 2rem;
+}
+.card:not(:first-child):hover,.card:not(:first-child):focus {
+  background:#e91e63;
+  color: white;
+  border: solid white 2px;
+  outline: none;
+  transform: translateY(-1rem) scale(1.2);
 }
